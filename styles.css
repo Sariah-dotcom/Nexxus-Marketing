@@ -1,0 +1,161 @@
+/* General Styling */
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+img,svg {
+    height: 100%;
+    width: 100%;
+}
+
+h1{
+    font-family: "Manrope", sans-serif;
+    color: #e9084c;
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+    font-family: "Manrope", sans-serif;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+button {
+    height: 2.5rem;
+    width: 8rem;
+    font-family: "Manrope", sans-serif;
+    font-weight: 700;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5 ease-in;
+    border: 3px solid #e9084c;
+    color: #e9084c;
+    background-color: white;
+    margin-top: 40px;
+}
+
+button:hover {
+    background-color: #DD70F0;
+    color: white;
+    border: 3px solid #DD70F0;
+}
+         
+ 
+/* Navigation */
+#nav-bar {
+    display: flex;
+    height: 7rem;
+    width: 100%;
+    padding: 50px;
+    /* position: fixed; */
+    justify-content: space-between;
+
+
+}
+
+.logo {
+    height: 3rem;
+    width: 3rem;
+    margin-top: -25px;
+}
+
+.nav-links ul {
+    display: flex;
+    gap:50px;
+    width: 35rem;
+    /* border: 1px solid red; */
+}
+
+.nav-links {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.nav-links a {
+    color: #e9084c;
+}
+
+.nav-links a:hover {
+    color: #DD70F0;
+}
+
+/* Hero */
+#hero {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-wave {
+    position: absolute;
+    top: 320px;
+    z-index: -1;
+}
+
+.hero-img {
+    position: absolute;
+    height: 550px;
+    width: 440px;
+    right: 140px;
+    top: 11rem;
+    z-index: 1;
+    padding-right: 20px;
+}
+
+.hero-caption {
+    font-size: 3rem;
+    width: 70%;
+    margin-top: 7%;
+    padding-left: 50px;
+}
+
+.wave {
+    transform: rotateX(180deg);
+    margin-top: -180px;
+}
+
+/* Intro */
+#intro {
+    height: 50vh;
+    display: flex;
+}
+
+.intro-left {
+    width: 60%;
+    padding: 50px;
+    font-size: 1.5rem;
+}
+
+.intro-right {
+    width: 40%;
+}
+
+.shape-container {
+    display: flex;
+    gap: 1rem;
+}
+
+.gradient-hexagon {
+    height: 10rem;
+    width: 10rem;
+}
+
+.shape-left, .shape-right {
+    display: flex;
+    flex-direction: column;
+}
+
+.shape-left {
+    /* position: absolute; */
+    margin-top: -90px;
+}
+
+
