@@ -9,10 +9,24 @@ img,svg {
     width: 100%;
 }
 
-h1{
+h1 {
     font-family: "Manrope", sans-serif;
     color: #e9084c;
     font-weight: 700;
+}
+
+h2 {
+    font-family: "Manrope", sans-serif;
+    color: #eb154a;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+p {
+    font-family: "Manrope", sans-serif;
+    color: #4C4C4C;
+    font-weight: 400;
+    font-size: 1.1rem;
 }
 
 a {
@@ -41,9 +55,9 @@ button {
 }
 
 button:hover {
-    background-color: #DD70F0;
+    background-color: #8e0ba5;
     color: white;
-    border: 3px solid #DD70F0;
+    border: 3px solid #8e0ba5;
 }
          
  
@@ -52,7 +66,7 @@ button:hover {
     display: flex;
     height: 7rem;
     width: 100%;
-    padding: 50px;
+    padding: 50px 100px;
     /* position: fixed; */
     justify-content: space-between;
 
@@ -83,7 +97,7 @@ button:hover {
 }
 
 .nav-links a:hover {
-    color: #DD70F0;
+    color: #8e0ba5;
 }
 
 /* Hero */
@@ -96,7 +110,7 @@ button:hover {
 
 .hero-wave {
     position: absolute;
-    top: 320px;
+    top: 360px;
     z-index: -1;
 }
 
@@ -104,22 +118,24 @@ button:hover {
     position: absolute;
     height: 550px;
     width: 440px;
-    right: 140px;
+    right: 100px;
     top: 11rem;
     z-index: 1;
     padding-right: 20px;
 }
 
 .hero-caption {
+    /* border: 1px solid red; */
+    height: 300px;
     font-size: 3rem;
     width: 70%;
     margin-top: 7%;
-    padding-left: 50px;
+    padding-left: 100px;
 }
 
 .wave {
     transform: rotateX(180deg);
-    margin-top: -180px;
+    margin-top: -130px;
 }
 
 /* Intro */
@@ -158,4 +174,176 @@ button:hover {
     margin-top: -90px;
 }
 
+/* About and Services */
+#about, #services {
+    height: 80vh;
+    padding: 50px;
+    margin-top: 50px;
+}
+
+.about-header,.services-header {
+    font-size: 2rem;
+}
+
+.services-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+hr {
+    height: 4px;
+    width: 40%;
+    background-color: #eb154a;
+    border: none;
+    border-radius: 10px;
+}
+
+.about-content, .services-content {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.about-left, .services-right {
+    width: 30%;
+}
+
+.about-right,.services-left {
+    width: 60%;
+    padding: 90px 50px;
+    text-align: right;
+}
+
+.services-left {
+    text-align: left;
+}
+
+/* Testimonials */
+#testimonials {
+    height: 60vh;
+    background-color: #eb154a;
+    margin-top: -4px;
+}
+
+.testimonials-container {
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.testimonial-card {
+    height: 25rem;
+    width: 18rem;
+    margin-top: -40px;
+    border-radius: 20px;
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FFFFFF;
+    opacity:90%;
+}
+
+.testimonial-card p {
+    font-size: 13px;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.a, .c {
+    margin-top: -70px;
+}
+
+.headshot img {
+    border-radius: 50%;
+}
+
+.headshot {
+    height: 6rem;
+    width: 5.7rem;
+    border-radius: 50%;
+}
+
+/* Contact */
+#contact {
+    height: 90vh;
+    background-color: #eb154a;
+}
+
+.contact-form {
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+form {
+    background-color: white;
+    height: 30rem;
+    width: 70%;
+    border-radius: 2rem;
+    padding: 3rem 5rem;
+    display: flex;
+    color: #4C4C4C;
+}
+
+.contact-left {
+    width:40%;
+    padding-right: 60px;
+}
+
+.title {
+    margin-bottom: 1rem;
+}
+
+.contact-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 60%;
+}
+
+.input {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    border: none;
+    outline: none;
+}
+
+.input-container {
+    position: relative;
+}
+
+.placeholder {
+    position: relative;
+    z-index: 1;
+    pointer-events: none;
+    padding: 0.3rem 0rem;
+    font-size: 0.9rem;
+    transform-origin: left;
+}
+
+.line-svg {
+    position: absolute;
+    bottom: -20px;
+    overflow: visible;
+}
+
+/* Footer */
+footer {
+    height: 15rem;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #FFFFFF;
+    /* background: rgb(250,250,250);
+    background: linear-gradient(180deg, rgba(250,250,250,1) 80%, rgba(235,21,74,1) 98%); */
+}
 
