@@ -11,20 +11,20 @@ img,svg {
 
 h1 {
     font-family: "Manrope", sans-serif;
-    color: #e9084c;
+    color: #e9084c;;
     font-weight: 700;
 }
 
 h2 {
     font-family: "Manrope", sans-serif;
-    color: #eb154a;
+    color: #e9084c;
     font-size: 15px;
     font-weight: 600;
 }
 
 p {
     font-family: "Manrope", sans-serif;
-    color: #4C4C4C;
+    /* color: #4C4C4C; */
     font-weight: 400;
     font-size: 1.1rem;
 }
@@ -67,10 +67,7 @@ button:hover {
     height: 7rem;
     width: 100%;
     padding: 50px 100px;
-    /* position: fixed; */
     justify-content: space-between;
-
-
 }
 
 .logo {
@@ -176,13 +173,14 @@ button:hover {
 
 /* About and Services */
 #about, #services {
-    height: 80vh;
+    height: 90vh;
     padding: 50px;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
-.about-header,.services-header {
-    font-size: 2rem;
+.about-header h1,.services-header h1{
+    font-size: 3rem;
+    color: #e9084c;
 }
 
 .services-header {
@@ -193,30 +191,56 @@ button:hover {
 
 hr {
     height: 4px;
-    width: 40%;
-    background-color: #eb154a;
+    width: 30%;
+    background-color: #e9084c;
     border: none;
     border-radius: 10px;
 }
 
 .about-content, .services-content {
     display: flex;
-    justify-content: center;
+    height: 60vh;
     gap: 50px;
 }
 
-.about-left, .services-right {
-    width: 30%;
-}
+.mobile-about {display: none;}
+
+.about-left {padding: 50px 150px 50px 2px;}
+
+.about-left, .services-right {width: 45%;}
+
+.services-right {padding: 50px 2px 50px 150px;}
+
+.about-pg {font-size: 16px;}
 
 .about-right,.services-left {
-    width: 60%;
-    padding: 90px 50px;
+    width: 50%;
+    padding: 2rem;
     text-align: right;
+    border-radius: 2rem;
+    font-size: 1rem;
+    display: flex;
+    border: 2px solid #a30a38;
+    color: #a30a38;
+    box-shadow: 0.7rem 0.7rem 0rem #a30a38;
 }
 
+.about-right svg,.services-left svg {
+    height: 20px;
+    width: 20px;
+}
+
+.about-right {align-items: center;}
+
 .services-left {
+    flex-direction: column;
     text-align: left;
+    justify-content: center;
+    gap: 20px;
+}
+
+.services-left h1 {
+    color: #a30a38;
 }
 
 /* Testimonials */
@@ -246,15 +270,15 @@ hr {
     opacity:90%;
 }
 
+.testimonial-card h2 {text-align: center;}
+
 .testimonial-card p {
     font-size: 13px;
     text-align: center;
     margin-top: 1rem;
 }
 
-.a, .c {
-    margin-top: -70px;
-}
+.a, .c { margin-top: -70px;}
 
 .headshot img {
     border-radius: 50%;
@@ -268,7 +292,7 @@ hr {
 
 /* Contact */
 #contact {
-    height: 90vh;
+    height: 95vh;
     background-color: #eb154a;
 }
 
@@ -278,7 +302,6 @@ hr {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 form {
@@ -294,10 +317,17 @@ form {
 .contact-left {
     width:40%;
     padding-right: 60px;
+    display: flex;
+    flex-direction: column;
 }
 
 .title {
     margin-bottom: 1rem;
+}
+
+.contact-left svg {
+    position: absolute;
+    left: -250px;
 }
 
 .contact-right {
@@ -305,6 +335,10 @@ form {
     flex-direction: column;
     justify-content: space-between;
     width: 60%;
+}
+
+.contact-right button {
+    margin-left: auto;
 }
 
 .input {
@@ -325,7 +359,7 @@ form {
     z-index: 1;
     pointer-events: none;
     padding: 0.3rem 0rem;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     transform-origin: left;
 }
 
@@ -333,6 +367,7 @@ form {
     position: absolute;
     bottom: -20px;
     overflow: visible;
+    opacity: 80%;
 }
 
 /* Footer */
@@ -343,7 +378,179 @@ footer {
     align-items: center;
     justify-content: space-between;
     background-color: #FFFFFF;
-    /* background: rgb(250,250,250);
-    background: linear-gradient(180deg, rgba(250,250,250,1) 80%, rgba(235,21,74,1) 98%); */
 }
 
+footer h1 {
+    color: #e9084c;
+}
+
+
+/* Media Queries */
+@media(max-width:1024px)
+{
+    #hero {height: 30vh;}
+
+    .hero-caption {font-size: 2.3rem;}
+
+    .hero-img { right: 10px;}
+    
+    .wave { margin-top: 20px;}
+
+    #intro {height: 30vh;}
+
+    #about, #services {
+        padding: 20px 50px;
+        height: 30vh; 
+        margin-top: 0px;
+    }
+
+    .about-content, .services-content { height: 20vh;}
+
+    .about-left {padding: 30px 140px 20px 1px;}
+
+    .about-right p {font-size: 14px;}
+
+    .services-left h1 {font-size:1rem;}
+
+    .services-right {padding: 30px 1px 20px 140px;}
+
+    #testimonials {
+        height: 25vh; 
+        margin-top: -10px;
+    }
+
+    .testimonials-container {padding: 10px;}
+
+    #contact {
+        height: 60vh;
+        margin-top: -5px;
+    }
+
+    .contact-form {height: 60vh;}
+}
+@media(max-width:450px){
+    
+    /* #nav-bar {
+        display: none;
+    } */
+
+    #hero {height: 30vh;}
+
+    .hero-caption {
+        font-size: 1.6rem; 
+        width: 100%; 
+        padding: 20px;
+    }
+
+    .hero-img {
+        height: 20rem;
+        width: 14rem;
+        margin-top: 40px;
+    }
+
+    .hero-wave {
+        margin-top: -30px;
+    }
+
+    #intro {
+        height: 42vh;
+        flex-direction: column;
+    }
+
+    .intro-left {
+        font-size: 0.8rem;
+        padding: 30px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .shape-container {
+        width: 100vw;
+        justify-content: center;
+    }
+
+    .shape-right img, .shape-left img{
+        height: 7rem;
+        width:7rem;
+    }
+
+    .shape-left {
+        margin-top: -40px;
+    }
+
+    #about, #services {
+        height: 40vh;
+    }
+
+    .about-left,.services-right {
+        display: none;
+    }
+
+    .about-content,.services-content { padding: 2px; width: 100%; height: 25vh;}
+
+    .about-right, .services-left
+    {
+        padding: 20px;
+        width: 100vw;
+        margin-top: 20px;
+    }
+
+    .about-pg {display: none;}
+
+    .mobile-about{
+        display: block;
+        font-size: 12px;
+        text-align: center;
+    }
+
+    #testimonials { height: 170vh;width: 100vw;}
+
+    .testimonials-container {
+        flex-direction: column; 
+        align-items: center; 
+        height: 170vh;
+        width: 100vw;
+    }
+
+    .testimonial-card {margin-top: 1rem;}
+
+    #contact {
+        height: 70vh;
+        padding: 10px;
+        margin-top: -40px;
+    }
+
+    form {
+        flex-direction: column;
+        width: 90%;
+        padding: 2.5rem;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contact-left, .contact-right {width: 100%;}
+
+    .contact-right {
+        gap: 1.5rem;
+    }
+
+    .contact-form h2 {display: none;}
+    .contact-form h1 {font-size: 2rem;}
+
+    .contact-img {
+        position: absolute;
+        height: 20rem;
+        width: 14rem;
+        margin-top: 190px;
+        margin-left: -60px;
+    }
+
+    footer ul {
+        border: 1px solid red;
+        width: 3rem;
+        height: 10rem;
+        flex-direction: column;
+    }
+
+    footer ul li {margin-top: -35px;}
+}

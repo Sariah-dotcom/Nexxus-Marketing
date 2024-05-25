@@ -32,7 +32,7 @@ tl.fromTo (
     }
 );
 
-//
+//Intro Animation
 gsap.registerPlugin(ScrollTrigger);
 
 const tl2 = gsap.timeline({
@@ -64,6 +64,19 @@ tl2.fromTo(
         duration:1
     },
     "<20%"
+);
+
+tl2.fromTo (
+    ".shape-container",
+    {
+        y:1,
+    },
+    {
+        y:50,
+        duration:2,
+        repeat: -1, // Repeat indefinitely
+        yoyo: true  // Reverse on each repeat
+    }
 );
 
 ScrollTrigger.create({
@@ -146,7 +159,7 @@ tl4.fromTo(
 
 ScrollTrigger.create({
     trigger: '#services',
-    start: 'top 200px',
+    start: 'top 400px',
     animation: tl4,
     once: true
 });
@@ -185,7 +198,7 @@ tl5.fromTo(
 
 ScrollTrigger.create({
     trigger: '#testimonials',
-    start: "top 300px",
+    start: "top 400px",
     animation: tl5,
 
 });
@@ -197,8 +210,8 @@ const form = document.querySelector("form");
 const tl6 = gsap.timeline({defualts: {duration:1}});
 
 //Line animation
-const start =  "M0 0.999512C0 0.999512 60.5 0.999512 150 0.999512C239.5 0.999512 300 0.999512 300 0.999512";
-const end = "M1 0.999512C1 0.999512 61.5 7.5 151 7.5C240.5 7.5 301 0.999512 301 0.999512";
+const start =  "M0.975952 1.85319C0.975952 1.85319 89.1399 1.79705 147.5 1.85318C206.62 1.91004 300.976 1.85319 300.976 1.85319";
+const end = "M0.975952 1.85318C0.975952 1.85318 91.6399 12.9439 150 13C209.12 13.0569 300.976 1.85318 300.976 1.85318";
 
 containers.forEach(container =>{
     const input = container.querySelector('.input');
