@@ -25,8 +25,8 @@ h2 {
 p {
     font-family: "Manrope", sans-serif;
     /* color: #4C4C4C; */
-    font-weight: 400;
-    font-size: 1.1rem;
+    color: #817676;
+    
 }
 
 a {
@@ -41,25 +41,24 @@ li {
 }
 
 button {
-    height: 2.5rem;
-    width: 8rem;
+    padding: 1rem 2rem;
     font-family: "Manrope", sans-serif;
     font-weight: 700;
-    border-radius: 20px;
+    border-radius: 2rem;
+    border: none;
     cursor: pointer;
-    transition: 0.5 ease-in;
-    border: 3px solid #e9084c;
-    color: #e9084c;
-    background-color: white;
+    color: #FFFFFF;
+    background-color: #5A49A7;
     margin-top: 40px;
 }
 
 button:hover {
     background-color: #8e0ba5;
-    color: white;
-    border: 3px solid #8e0ba5;
 }
-         
+
+#services, #stats, #workflow {
+    margin-bottom: 10rem;
+}
  
 /* Navigation */
 .logo svg {
@@ -74,6 +73,7 @@ button:hover {
     align-items: center;
     justify-content: space-between;
     padding: 0px 50px;
+    margin-bottom: 5rem;
 }
 
 .nav-links {
@@ -104,11 +104,11 @@ button:hover {
 
 /* Hero */
 #hero {
-    height: 100vh;
-    width: 100%;
+    /* height: 100vh;
+    width: 100%; */
     display: flex;
     flex-direction: column;
-    margin-bottom: 400px;
+    margin-bottom: 40rem;
 }
 
 .hero-wave {
@@ -119,28 +119,26 @@ button:hover {
 
 .hero-img {
     position: absolute;
-    height: 550px;
-    width: 440px;
-    right: 100px;
-    top: 11rem;
-    /* z-index: 1; */
+    height: 32rem;
+    width: 35rem;
+    right: 30px;
+    top: 7rem;
     padding-right: 20px;
 }
 
 .hero-caption {
-    /* border: 1px solid red; */
     position: relative;
     height: 300px;
     font-size: 3rem;
     width: 70%;
-    padding-top: 60px;
+    padding-top: 10px;
     padding-left: 50px;
 }
 
 
 /* Intro */
 #intro {
-    height: 50vh;
+    min-height: 50vh;
     display: flex;
     z-index: -1;
 }
@@ -149,6 +147,11 @@ button:hover {
     width: 60%;
     padding: 50px;
     font-size: 1.5rem;
+}
+
+.intro-left p {
+    color: #e9084c;
+    font-size: 3rem;
 }
 
 .intro-right {
@@ -175,286 +178,153 @@ button:hover {
     margin-top: -90px;
 }
 
-/* About and Services */
-#about, #services {
-    height: 90vh;
-    padding: 50px;
-    margin-top: 30px;
+/* Statistics */
+
+#stats {
+    margin-top: 10rem;
+    min-height: 90vh;
+    max-width: 100%;
 }
 
-.about-header h1,.services-header h1{
+.stats-bg {
+    display: flex;
+    min-height: 90vh;
+    max-width: 100%;
+    background: linear-gradient(90deg,#5A49A7,#e9084c);
+}
+
+.stats-left {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.stats-grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 1rem;
+}
+
+.grid-item-stats {
+    height: 10rem;
+    width: 15rem;
+    border-radius: 5px;
+    background: linear-gradient(180deg, rgba(255,255,255,0.6), rgba(255,255,255, 0.1));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+.grid-item-stats:hover {
+    background: linear-gradient(180deg, rgba(255,255,255,0.7), rgba(255,255,255, 0.3));
+
+
+}
+
+.grid-item-stats h1 {
+    color: #FFFFFF;
+    font-size: 2rem;
+}
+
+.grid-item-stats p {
+    color: #FFFFFF;
+}
+
+.stats-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stats-right img{
+    height: 35rem;
+    width: 30rem;
+}
+
+/* Services */
+#services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+#services h1, #workflow h1 {
     font-size: 3rem;
-    color: #e9084c;
+    margin-bottom: 3rem;
 }
 
-.services-header {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+.services-grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 3rem;
 }
 
-hr {
-    height: 4px;
-    width: 30%;
-    background-color: #e9084c;
-    border: none;
-    border-radius: 10px;
+h2 {
+    color: #5A49A7;
+    font-size: 1.8rem;
 }
 
-.about-content, .services-content {
-    display: flex;
-    height: 60vh;
-    gap: 50px;
-}
-
-.mobile-about {display: none;}
-
-.about-left {padding: 50px 150px 50px 2px;}
-
-.about-left, .services-right {width: 45%;}
-
-.services-right {padding: 50px 2px 50px 150px;}
-
-.about-pg {font-size: 16px;}
-
-.about-right,.services-left {
-    width: 50%;
-    padding: 2rem;
-    text-align: right;
-    border-radius: 2rem;
-    font-size: 1rem;
-    display: flex;
-    border: 2px solid #a30a38;
-    color: #a30a38;
-    box-shadow: 0.7rem 0.7rem 0rem #a30a38;
-}
-
-.about-right svg,.services-left svg {
-    height: 20px;
-    width: 20px;
-}
-
-.about-right {align-items: center;}
-
-.services-left {
-    flex-direction: column;
-    text-align: left;
-    justify-content: center;
-    gap: 20px;
-}
-
-.services-left h1 {
-    color: #a30a38;
-}
-
-/* Testimonials */
-#testimonials {
-    height: 60vh;
-    background-color: #eb154a;
-    margin-top: -4px;
-}
-
-.testimonials-container {
-    height: 50vh;
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-}
-
-.testimonial-card {
+.grid-item {
     height: 25rem;
     width: 18rem;
-    margin-top: -40px;
-    border-radius: 20px;
-    padding: 2.5rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #FFFFFF;
-    opacity:90%;
-}
-
-.testimonial-card h2 {text-align: center;}
-
-.testimonial-card p {
-    font-size: 13px;
-    text-align: center;
-    margin-top: 1rem;
-}
-
-.a, .c { margin-top: -70px;}
-
-.headshot img {
-    border-radius: 50%;
-}
-
-.headshot {
-    height: 6rem;
-    width: 5.7rem;
-    border-radius: 50%;
-}
-
-/* Contact */
-#contact {
-    height: 95vh;
-    background-color: #eb154a;
-}
-
-.contact-form {
-    height: 90vh;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-form {
-    background-color: white;
-    height: 30rem;
-    width: 70%;
-    border-radius: 2rem;
-    padding: 3rem 5rem;
-    display: flex;
-    color: #4C4C4C;
-}
-
-.contact-left {
-    width:40%;
-    padding-right: 60px;
-    display: flex;
-    flex-direction: column;
-}
-
-.title {
-    margin-bottom: 1rem;
-}
-
-.contact-left svg {
-    position: absolute;
-    left: -250px;
-}
-
-.contact-right {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 60%;
-}
-
-.contact-right button {
-    margin-left: auto;
-}
-
-.input {
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    border: none;
-    outline: none;
-}
-
-.input-container {
-    position: relative;
-}
-
-.placeholder {
-    position: relative;
-    z-index: 1;
-    pointer-events: none;
-    padding: 0.3rem 0rem;
-    font-size: 0.8rem;
-    transform-origin: left;
-}
-
-.line-svg {
-    position: absolute;
-    bottom: -20px;
-    overflow: visible;
-    opacity: 80%;
-}
-
-/* Footer */
-footer {
-    height: 15rem;
     padding: 2rem;
+    border-radius: 1rem;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #FFFFFF;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    background-color: #DDE0FF;
 }
 
-footer h1 {
+.grid-item p {
+    font-size: 0.9rem;
+}
+
+/* Workflow */
+
+.step {
+    display: flex;
+    gap: 1rem;
+}
+
+/* .step-left {
+    width: 70%;
+} */
+
+.step-left img {
+    height: 15rem;
+}
+
+.step-right h2{
     color: #e9084c;
+}
+
+.step-right {
+    padding: 1rem;
+    width: 50%;
 }
 
 
 /* Media Queries */
-@media (max-width:1024px) {
-    #hero {height: 50vh;}
-
-    .hero-caption {font-size: 3rem;}
-
-    .hero-caption button {
-        margin-top: -20px;
+@media only screen and (max-width: 768px){
+    body {
+        /* min-width: 100%; */
+        overflow-x: hidden;
     }
 
-    .hero-img { right: 10px;}
-    .hero-wave {margin-top: 80px;}
-    
-    .wave { margin-top: 0px;}
-
-    #intro {height: 30vh;}
-
-    #about, #services {
-        padding: 20px 50px;
-        height: 30vh; 
-        margin-top: 0px;
+    #nav-bar{
+        padding: 4rem 3rem;
     }
 
-    .about-content, .services-content { height: 20vh;}
-
-    .about-left {padding: 30px 140px 20px 1px;}
-
-    .about-right p {font-size: 14px;}
-
-    .services-left h1 {font-size:1rem;}
-
-    .services-right {padding: 30px 1px 20px 140px;}
-
-    #testimonials {
-        height: 25vh; 
-        margin-top: -10px;
-    }
-
-    .testimonials-container {padding: 10px;}
-
-    #contact {
-        height: 60vh;
-        margin-top: -5px;
-    }
-
-    .contact-form {height: 60vh;}
-}
-
-@media (max-width:768px) { 
-    .hero-caption {font-family: 2.5rem;}
-
-    .wave {margin-top: 130px;}
-}
-
-
-@media (max-width:450px) { 
-
-    .logo svg {
-        height: 2.5rem;
-        width: 2.5rem;
-    }
     .hamburger-menu {
         display: block;
         height: 3rem;
         width: 3rem;
-        z-index: 3; /* Ensure the menu button is above other elements */
+        z-index: 3;
     }
 
     .nav-links {
@@ -484,96 +354,80 @@ footer h1 {
         margin-top: 1.5rem;
         height: 25rem;
         position: relative;
-        /* border: 1px solid white; */
+
     }
 
     .nav-links ul a { color: wheat;}
 
-    #nav-bar {padding: 0px 20px;}
-
-    section, footer {overflow: hidden;}
 
     #hero {
-        height: 30vh; 
-        width: 100vw;
-        margin-bottom: 15rem;
+        min-height: 50vh;
+        margin-bottom: 0px;
+        overflow-x: hidden;
+
     }
 
     .hero-caption {
-        font-size: 1.7rem; 
-        width: 80%; 
-        padding-top: 0px;
-        padding-left: 20px;
-        margin-top: 50px;
-        z-index: 1;
-        position: relative;
+        height: 50%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
     }
 
-    .hero-caption button { 
-        margin-top: 10px;
-        width: 7rem;
+    .hero-caption h1 {
+        font-size: 5rem;
+    }
+
+    .hero-caption button {
+        height: 5rem ;
+        width: 14rem;
+        font-size: 1.5rem;
+        border-radius: 50px;
     }
 
     .hero-img {
-        height: 17rem;
-        width: 13rem;
-        margin-top: 30px;
-        margin-right: -10px;
-        z-index: -1; 
+        margin-top: 20rem;
+        margin-right: -5rem;
+
     }
 
     .hero-wave {
-        margin-top:-20px;
-        width: 100vw;
-        z-index: -2; 
+        margin-top: 20rem;
     }
 
-
-    #intro {
-        height: 30vh;
+    #intro, .about-content, .services-content {
         flex-direction: column;
-    }
-
-    .intro-left {
-        font-size: 0.9rem;
-        padding: 30px;
-        width: 100vw;
         text-align: center;
     }
 
     .shape-container {
-        width: 100vw;
         justify-content: center;
-        position: relative;
-        z-index: -4;
+        margin-top: 3rem;
     }
 
-    .shape-right img, .shape-left img{
-        height: 7rem;
-        width:7rem;
+    #about {
+        margin-bottom: 20rem;
     }
 
-    .shape-left {margin-top: -40px;}
-
-    #about, #services {height: 50vh; }
-
-    .about-left,.services-right {display: none;}
-
-    .about-content,.services-content { padding: 2px; width: 100%; height: 30vh;}
-
-    .about-right, .services-left
-    {
-        padding: 20px;
-        width: 100vw;
-        margin-top: 20px;
+    .about-content, .services-content {
+        min-height: 100vh;
     }
 
-    .about-pg {display: none;}
+    .intro-left, .intro-right, .about-right, .services-left {
+        width: 100%;
+    }
 
-    .mobile-about{
-        display: block;
-        font-size: 12px;
-        text-align: center;
+    .about-pg {
+        font-size: 1.5rem;
+    }
+
+    .about-left, .services-right {
+      margin: auto;
+    }
+
+    .about-right,.services-left {
+        height: 50rem;
     }
 
     #testimonials { height: 170vh;width: 100vw;}
@@ -581,105 +435,17 @@ footer h1 {
     .testimonials-container {
         flex-direction: column; 
         align-items: center; 
-        height: 170vh;
+        height: 150vh;
         width: 100vw;
     }
 
     .testimonial-card {margin-top: 1rem;}
 
-    #contact {
-        height: 70vh;
-        padding: 10px;
-        margin-top: -40px;
+    .wave-2 {
+        margin-top: 25rem;
     }
 
-    form {
-        flex-direction: column;
-        width: 90%;
-        padding: 2.5rem;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .contact-left, .contact-right {width: 100%;}
-
-    .contact-right {gap: 1.5rem;}
-
-    .contact-form h2 {display: none;}
-
-    .contact-form h1 {font-size: 2rem;}
-
-    .contact-img {
-        position: absolute;
-        height: 20rem;
-        width: 14rem;
-        margin-top: 190px;
-        margin-left: -60px;
-    }
-
-    .nav-links-footer {
-       display: none;
-    }
-}
-
-
-@media (max-width:375px) {
-    section {overflow: hidden;}
-
-    #hero {height: 35vh; z-index: -1;}
-
-    .hero-caption {
-        height: 25rem;
-        font-size: 1.5rem; 
-        margin-top: 25px;
-        z-index: -1;
-        padding-top: 0px;
-
-    }
-
-    .hero-img {
-        z-index: -1;
-    }
-
-    .nav-links {z-index: 2;}
-
-    .hero-wave {z-index: -2; margin-top: -50px;}
-
-    .wave {margin-top: 100px;}
-
-    #intro,#about,#services, .about-content {height: 80vh;}
-
-    .about-right,.services-left {height: 50vh;}
-
-    .services-header {margin-top: 60px;}
-
-    #testimonials {height: 220vh;}
-
-    .testimonials-container {height: 200vh;}
-
-    #contact {height: 100vh;}
-
-    .contact-form {margin-top: 50px;}
 
 }
 
-@media (min-width:390px ){
-    .hero-caption {
-        margin-top: 30px;
-        padding-top: 0px;
-
-        /* border: 1px solid red; */
-    }
-}
-
-@media (min-width:360px){
-
-    #intro {
-        height: 65vh;
-    }
-
-    .contact-form img {display: none;}
-
-    .contact-form h1 {width: 20rem;}
-}
 

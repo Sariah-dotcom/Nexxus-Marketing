@@ -100,41 +100,28 @@ ScrollTrigger.create({
     once: true
 });
 
-// About and Services section animations
+
+// Statistics animations
 const tl3 = gsap.timeline({
     defaults : { duration:0.75, ease:"Power3.easeOut" }
 });
 
 tl3.fromTo(
-    ".about-left",
+    ".grid-item-stats",
     {
         opacity:0,
-        x:-50
     },
     {
         opacity:1,
-        x:1,
+        stagger: 0.4,
         duration:1
     }
 );
 
-tl3.fromTo(
-    ".about-right",
-    {
-        opacity:0,
-        x:50
-    },
-    {
-        opacity:1,
-        x:1,
-        duration:1
-    },
-    "<20%"
-);
 
 ScrollTrigger.create({
-    trigger: '#about',
-    start: 'top 200px',
+    trigger: '#stats',
+    start: 'top 300px',
     animation: tl3,
     once: true
 });
@@ -145,7 +132,7 @@ const tl4 = gsap.timeline({
 });
 
 tl4.fromTo(
-    ".services-left",
+    ".grid-item",
     {
         opacity:0,
         x:-50
@@ -153,69 +140,57 @@ tl4.fromTo(
     {
         opacity:1,
         x:1,
+        stagger: 0.2,
         duration:1
     }
 );
 
-tl4.fromTo(
-    ".services-right",
-    {
-        opacity:0,
-        x:50
-    },
-    {
-        opacity:1,
-        x:1,
-        duration:1
-    },
-    "<20%"
-);
 
 ScrollTrigger.create({
     trigger: '#services',
-    start: 'top 400px',
+    start: 'top 100px',
     animation: tl4,
     once: true
 });
 
-// Testimonials animations
-const tl5 = gsap.timeline({
-    defaults : { duration:0.75, ease:"Power3.easeOut" }
-});
+// // Testimonials animations
+// const tl5 = gsap.timeline({
+//     defaults : { duration:0.75, ease:"Power3.easeOut" }
+// });
 
-tl5.fromTo(
-    ".a, .c",
-    {
-        opacity:0,
-        y:-200
-    },
-    {
-        opacity:1,
-        y:1,
-        duration:1.5
-    }
-);
+// tl5.fromTo(
+//     ".a, .c",
+//     {
+//         opacity:0,
+//         y:-200
+//     },
+//     {
+//         opacity:1,
+//         y:1,
+//         duration:1.5
+//     }
+// );
 
-tl5.fromTo(
-    ".b",
-    {
-        opacity:0,
-        y:200
-    },
-    {
-        opacity:1,
-        y:1,
-        duration:1.5
-    },
-    "<20%"
-);
+// tl5.fromTo(
+//     ".b",
+//     {
+//         opacity:0,
+//         y:200
+//     },
+//     {
+//         opacity:1,
+//         y:1,
+//         duration:1.5
+//     },
+//     "<20%"
+// );
 
-ScrollTrigger.create({
-    trigger: '#testimonials',
-    start: "top 400px",
-    animation: tl5,
+// ScrollTrigger.create({
+//     trigger: '#testimonials',
+//     start: "top 400px",
+//     animation: tl5,
 
-});
+// });
 
 // Form animations
 const containers = document.querySelectorAll(".input-container");
