@@ -2,280 +2,370 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=100%, initial-scale=1.0">
-
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/x-icon" href="images\icons\favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Poetsen+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">    
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
     <title>Nexxus Marketing</title>
 </head>
 <body>
+    <div class="hero-decor">
+        <img src="images/hero-decor.png" alt="">
+    </div>
 
-    <!-- Navigation Menu -->
+    <div class="hero-decor-2">
+        <img src="images/hero-decor-desktop.png" alt="">
+    </div>
 
-    <div id="nav-bar">
+    
+
+    <!-- Navigation -->
+    <div class="nav-bar">
+
         <div class="logo">
-            <a href="index.html">
-                <svg xmlns="http://www.w3.org/2000/svg" id="SvgjsSvg2722" x="0" y="0" version="1.1" viewBox="0 0 512 512" width="200" height="200" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs"><path d="M0 .001h235.016v50.361H0zm0 92.327h235.016v50.36H0zm0 92.328v50.36h235.016v-50.36zM461.638.001h50.361v235.016h-50.361zm-92.328 0h50.36v235.016h-50.36zm-92.327 0v235.015h50.36V.001zm0 461.638h235.016V512H276.983zm0-92.328h235.016v50.36H276.983zm163.673-92.327H276.983v50.36H512v-50.36zM0 276.984h50.361V512H0zm92.328 0h50.36V512h-50.36zm92.327 0v235.015h50.361V276.984z" fill="url(&quot;#SvgjsLinearGradient2723&quot;)"></path><defs><linearGradient gradientTransform="rotate(0 0.5 0.5)" id="SvgjsLinearGradient2723"><stop stop-opacity=" 1" stop-color="rgba(255, 105, 0)" offset="0.131015625"></stop><stop stop-opacity=" 1" stop-color="rgba(221, 112, 240)" offset="0.571015625"></stop><stop stop-opacity=" 1" stop-color="rgba(255, 0, 76)" 
-                    offset="1"></stop></linearGradient></defs>
-                </svg>
-            </a>
+            <svg xmlns="http://www.w3.org/2000/svg" id="SvgjsSvg1132" x="0" y="0" version="1.1" viewBox="0 0 512 512" width="2.5rem" height="2.5rem" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs"><path d="M0 .001h235.016v50.361H0zm0 92.327h235.016v50.36H0zm0 92.328v50.36h235.016v-50.36zM461.638.001h50.361v235.016h-50.361zm-92.328 0h50.36v235.016h-50.36zm-92.327 0v235.015h50.36V.001zm0 461.638h235.016V512H276.983zm0-92.328h235.016v50.36H276.983zm163.673-92.327H276.983v50.36H512v-50.36zM0 276.984h50.361V512H0zm92.328 0h50.36V512h-50.36zm92.327 0v235.015h50.361V276.984z" fill="url(&quot;#SvgjsLinearGradient1133&quot;)"></path><defs><linearGradient gradientTransform="rotate(0 0.5 0.5)" id="SvgjsLinearGradient1133"><stop stop-opacity=" 1" stop-color="rgba(26, 15, 145)" offset="0"></stop><stop stop-opacity=" 1" stop-color="rgba(234, 204, 248)" offset="0.48"></stop><stop stop-opacity=" 1" stop-color="rgba(254, 112, 98)" offset="1"></stop></linearGradient></defs></svg>
         </div>
 
-        <div class="hamburger-menu" id="hamburger-menu">
-            <a href="#"><img src="images/icons8-menu-48.png" alt="hamburger-menu"></a>
+        <div class="hamburger-menu">
+            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 512 512"><path fill="none" stroke="white" stroke-linecap="round" stroke-miterlimit="10" stroke-width="48" d="M88 152h336M88 256h336M88 360h336"/></svg>
         </div>
 
-        <div class="nav-links" id="nav-links">
+        <div class="nav-links">
             <ul>
-                <li class="nav-link"><a href="#">HOME</a></li>
-                <li class="nav-link"><a href="#">ABOUT</a></li>
-                <li class="nav-link"><a href="#">TESTIMONIALS</a></li>
-                <li class="nav-link"><a href="#">CONTACT</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Testimonials</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
         </div>
     </div>
-    
-    <!-- Hero Section -->
+
     <section id="hero">
-
-        <div class="hero-caption">
-            <h1>We Turn your Digital Dreams into Reality</h1>
-            <button>Get Started</button>
-        </div>
-
-        <div class="hero-img">
-            <img class="img-hero" src="hero-img (1).png" alt="">
-        </div>
-
-        <div class="hero-wave">
-            <img src="Wave (1).png" alt="wave">
-        </div>
-
+        <h1>Creating brands <br> and digital solutions</h1>
+        <p class="hero-pg">Build and enhance you business today with our tailored solutions</p>
+        <button class="cta">Get Started</button>
     </section>
 
-    <!-- Introduction -->
-    <section id="intro">
-        <div class="intro-left">
-            <p>The <b>leading</b> digital marketing company in the Caribbean </p>
-        </div>
-        <div class="intro-right">
-            <div class="shape-container">
-                <div class="shape-left">
-                    <img class="gradient-hexagon" src="asset (12).png" alt="">
-                    <img class="gradient-hexagon" src="asset (12).png" alt="">
-                </div>
-
-                <div class="shape-right">
-                    <img class="gradient-hexagon" src="asset (12).png" alt="">
-                    <img class="gradient-hexagon" src="asset (12).png" alt="">
-                </div>   
-            </div>
-        </div>
-    </section>
-
-    <!-- Company Statistics -->
-    <section id="stats">
-        <div class="stats-bg">
-            <div class="stats-left">
-
-                <div class="stats-grid-container">
-                    <div class="grid-item-stats">
-                        <h1>12 Years</h1>
-                        <p>in operation</p>
-                    </div>
-
-                    <div class="grid-item-stats">
-                        <h1>500+</h1>
-                        <p>satisfied businesses</p>
-                    </div>
-
-                    <div class="grid-item-stats">
-                        <h1>98%</h1>
-                        <p>customer satisfaction</p>
-                    </div>
-
-                    <div class="grid-item-stats">
-                        <h1>97%</h1>
-                        <p>small businesses</p>
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="stats-right">
-                <img src="stats-graphic.png" alt="">
-            </div>
+    <section id="about">
+        <div class="page-decor"><img src="images/page-decor.png" alt=""></div>
+        <div class="page-decor-2"><img src="images/page-decor-desktop.png" alt=""></div>
+        <div class="about-content">
+            <h1>Who we are</h1>
+            <p class="about-pg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea excepturi illo esse unde quae commodi sed accusantium laboriosam quod aut pariatur dignissimos tenetur, ipsa sint quo quidem? Dolorum, ut doloremque?</p>
+            <p class="about-pg-2">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent elementum vestibulum sollicitudin. 
+                Pellentesque porta feugiat leo eu ornare. Etiam tellus ligula, pellentesque non dolor vitae, lacinia cursus metus. 
+                Sed in turpis sed enim luctus semper at at orci. Ut posuere metus ac mi efficitur, rhoncus vehicula dui aliquam.
+                <br><br>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent elementum vestibulum sollicitudin. Pellentesque 
+                porta feugiat leo eu ornare. Etiam tellus ligula, pellentesque non dolor vitae, lacinia cursus metus. Sed in turpis 
+                sed enim luctus semper at at orci. Ut posuere metus ac mi efficitur, rhoncus vehicula dui aliquam. Vestibulum ante.
+            </p>
+            <button>Learn More</button>
         </div>
     </section>
 
     <!-- Services -->
     <section id="services">
-        <h1>Our Services</h1>
-        <div class="services-grid-container">
+        <h1 style="color: #FFFFFF;">Our Services</h1>
+        <div class="grid-container">
             <div class="grid-item">
-                <h2>Branding & Logo Conception</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, soluta sapiente quod, incidunt explicabo.Ad, soluta sapiente quod, incidunt explicabo.</p>
-                <button class="card-btn">Learn More</button>
+                <h1>Brand and Logo Conception</h1>
+                <svg xmlns="http://www.w3.org/2000/svg" width="5rem" height="5rem" viewBox="0 0 15 15"><path fill="white" d="M4.5 6.5V6a.5.5 0 0 0-.5.5zm10 0h.5a.5.5 0 0 0-.5-.5zm0 6v.5a.5.5 0 0 0 .5-.5zm-10 0H4a.5.5 0 0 0 .5.5zM1 1v14h1V1zM0 4h15V3H0zm4.5 3h10V6h-10zm9.5-.5v6h1v-6zm.5 5.5h-10v1h10zm-9.5.5v-6H4v6zm1-9v3h1v-3zm6 0v3h1v-3z"/></svg>
             </div>
             <div class="grid-item">
-                <h2>Branding & Logo Conception</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, soluta sapiente quod, incidunt explicabo.Ad, soluta sapiente quod, incidunt explicabo.</p>
-                <button class="card-btn">Learn More</button>
-            </div>
+                <h1>Web Development</h1>
+                <svg xmlns="http://www.w3.org/2000/svg" width="5rem" height="5rem" viewBox="0 0 20 20"><g fill="white" fill-rule="evenodd" clip-rule="evenodd"><g opacity="0.2"><path d="M2.59 10.331a1 1 0 0 1 1.412-.074l3.334 3a1 1 0 0 1-1.338 1.486l-3.334-3a1 1 0 0 1-.074-1.412"/><path d="M7.41 7.331a1 1 0 0 1-.074 1.412l-3.334 3a1 1 0 1 1-1.338-1.486l3.334-3a1 1 0 0 1 1.412.074m12 3a1 1 0 0 1-.074 1.412l-3.334 3a1 1 0 1 1-1.338-1.486l3.334-3a1 1 0 0 1 1.412.074"/><path d="M14.59 7.331a1 1 0 0 1 1.412-.074l3.334 3a1 1 0 0 1-1.338 1.486l-3.334-3a1 1 0 0 1-.074-1.412m-1.827-2.796a1 1 0 0 1 .702 1.228l-3 11a1 1 0 1 1-1.93-.526l3-11a1 1 0 0 1 1.228-.702"/></g><path d="M1.962 9.666a.5.5 0 0 1 .706-.038l3.333 3a.5.5 0 1 1-.669.744l-3.333-3a.5.5 0 0 1-.037-.706"/><path d="M6.038 6.666a.5.5 0 0 1-.037.706l-3.333 3a.5.5 0 0 1-.67-.744l3.334-3a.5.5 0 0 1 .706.038m12 3a.5.5 0 0 1-.037.706l-3.333 3a.5.5 0 0 1-.67-.744l3.334-3a.5.5 0 0 1 .706.038"/><path d="M13.962 6.666a.5.5 0 0 1 .706-.038l3.333 3a.5.5 0 0 1-.669.744l-3.333-3a.5.5 0 0 1-.037-.706m-2.33-2.648a.5.5 0 0 1 .35.614l-3 11a.5.5 0 0 1-.964-.264l3-11a.5.5 0 0 1 .614-.35"/></g></svg>
 
+            </div>
             <div class="grid-item">
-                <h2>Branding & Logo Conception</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, soluta sapiente quod, incidunt explicabo.Ad, soluta sapiente quod, incidunt explicabo.</p>
-                <button class="card-btn">Learn More</button>
+                <h1>SEO Optimization</h1>
+                <svg xmlns="http://www.w3.org/2000/svg" width="5rem" height="5rem" viewBox="0 0 24 24"><g fill="none" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" color="white"><path d="m5 20l2.413-2.413m0 0a4.444 4.444 0 1 0 6.285-6.285a4.444 4.444 0 0 0-6.285 6.285"/><path d="M3 15.188a7.4 7.4 0 0 1-1-3.726C2 7.341 5.358 4 9.5 4h5c4.142 0 7.5 3.341 7.5 7.462c0 3.25-2.087 6.014-5 7.038"/></g></svg>
+
             </div>
-
-            <div class="grid-item">
-                <h2>Branding & Logo Conception</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, soluta sapiente quod, incidunt explicabo.Ad, soluta sapiente quod, incidunt explicabo.</p>
-                <button class="card-btn">Learn More</button>
-            </div>
-
-            <div class="grid-item">
-                <h2>Branding & Logo Conception</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, soluta sapiente quod, incidunt explicabo.Ad, soluta sapiente quod, incidunt explicabo.</p>
-                <button class="card-btn">Learn More</button>
-            </div>
-
-            <div class="grid-item">
-                <h2>Branding & Logo Conception</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, soluta sapiente quod, incidunt explicabo.Ad, soluta sapiente quod, incidunt explicabo.</p>
-                <button class="card-btn">Learn More</button>
-            </div>
-
-
-
         </div>
     </section>
 
     <!-- Workflow -->
-     <section id="workflow">
-        <h1>How we get things Done</h1>
+    <section id="workflow">
+        <h1 style="text-align: center;">How We Get <br> Things Done</h1>
 
         <div class="workflow-content">
 
-            <div class="step">
-                <div class="step-left"><img src="curved-shape.png" alt=""></div>
-                <div class="step-right">
-                    <h2>1. Consultation</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius inventore minima quis velit ipsa. Eum excepturi ab fugiat dolore architecto rerum asperiores voluptas, eaque quis blanditiis facilis voluptatem dolores nulla!</p>
+            <div class="row">
+                <div class="row-left-1">
+                    <svg class="curved-shape-1" width="200" height="200" viewBox="0 0 500 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0H400C455.228 0 500 44.7715 500 100V100C500 155.228 455.228 200 400 200H0V0Z" fill="url(#paint0_linear_44_94)"/>
+                        <defs>
+                        <linearGradient id="paint0_linear_44_94" x1="500" y1="100" x2="0" y2="100" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#FE7062"/>
+                        <stop offset="1" stop-color="#5A49A7"/>
+                        </linearGradient>
+                        </defs>
+                    </svg>
+
+                    <svg class= "curved-shape-2" width="500" height="250" viewBox="0 0 720 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0H570C652.843 0 720 67.1573 720 150V150C720 232.843 652.843 300 570 300H0V0Z" fill="url(#paint0_linear_46_6)"/>
+                        <defs>
+                        <linearGradient id="paint0_linear_46_6" x1="720" y1="150" x2="0" y2="150" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#FE7062"/>
+                        <stop offset="1" stop-color="#5A49A7"/>
+                        </linearGradient>
+                        </defs>
+                    </svg>
+                    
+                </div>
+                <div class="row-right-1">
+                    <p> <span class="workflow-subject">1. Consultation:</span> Discuss business goals and marketing needs
+                        Analyze current digital presence. </p>
                 </div>
             </div>
 
-            <div class="step">
-                <div class="step-left-alt">
-                    <h2>1. Consultation</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius inventore minima quis velit ipsa. Eum excepturi ab fugiat dolore architecto rerum asperiores voluptas, eaque quis blanditiis facilis voluptatem dolores nulla!</p>
+            <div class="row">
+                <div class="row-left-2">
+                    <p><span class="workflow-subject">2. Strategy Development:</span>
+                        Create a comprehensive marketing plan
+                        Define key performance indicators (KPIs) 
+                    </p>
                 </div>
 
+                <div class="row-right-2">
+                    <svg class="curved-shape-1" width="215" height="200" viewBox="0 0 500 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M500 200L100 200C44.7715 200 0 155.228 0 100V100C0 44.7715 44.7715 0 100 0L500 0V200Z" fill="url(#paint0_linear_46_5)"/>
+                        <defs>
+                        <linearGradient id="paint0_linear_46_5" x1="0" y1="100" x2="500" y2="100" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#FE7062"/>
+                        <stop offset="1" stop-color="#5A49A7"/>
+                        </linearGradient>
+                        </defs>
+                    </svg>
+
+                    <svg class="curved-shape-2" width="500" height="250" viewBox="0 0 720 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M720 300L150 300C67.1573 300 0 232.843 0 150C0 67.1573 67.1573 0 150 0L720 0V300Z" fill="url(#paint0_linear_46_7)"/>
+                        <defs>
+                        <linearGradient id="paint0_linear_46_7" x1="0" y1="150" x2="720" y2="150" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#FE7062"/>
+                        <stop offset="1" stop-color="#5A49A7"/>
+                        </linearGradient>
+                        </defs>
+                    </svg>
                 </div>
             </div>
+
+            <div class="row">
+                <div class="row-left-1">
+                    <svg width="200" height="200" viewBox="0 0 500 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0H400C455.228 0 500 44.7715 500 100V100C500 155.228 455.228 200 400 200H0V0Z" fill="url(#paint0_linear_44_94)"/>
+                        <defs>
+                        <linearGradient id="paint0_linear_44_94" x1="500" y1="100" x2="0" y2="100" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#FE7062"/>
+                        <stop offset="1" stop-color="#5A49A7"/>
+                        </linearGradient>
+                        </defs>
+                    </svg>
+
+                    <svg class= "curved-shape-2" width="500" height="250" viewBox="0 0 720 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0H570C652.843 0 720 67.1573 720 150V150C720 232.843 652.843 300 570 300H0V0Z" fill="url(#paint0_linear_46_6)"/>
+                        <defs>
+                        <linearGradient id="paint0_linear_46_6" x1="720" y1="150" x2="0" y2="150" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#FE7062"/>
+                        <stop offset="1" stop-color="#5A49A7"/>
+                        </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+                <div class="row-right-1">
+                    <p><span class="workflow-subject">3. Content Creation: </span>Develop engaging and relevant content
+                        Design visuals and multimedia assets</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="row-left-2">
+                    <p><span class="workflow-subject">4. SEO and Performance monitoring: </span>Optimize website for search engines, Track campaign performance using analytics
+                        </p>
+                    
+                </div>
+                <div class="row-right-2">
+                    <svg width="215" height="200" viewBox="0 0 500 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M500 200L100 200C44.7715 200 0 155.228 0 100V100C0 44.7715 44.7715 0 100 0L500 0V200Z" fill="url(#paint0_linear_46_5)"/>
+                        <defs>
+                        <linearGradient id="paint0_linear_46_5" x1="0" y1="100" x2="500" y2="100" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#FE7062"/>
+                        <stop offset="1" stop-color="#5A49A7"/>
+                        </linearGradient>
+                        </defs>
+                    </svg>
+
+                    <svg class="curved-shape-2" width="500" height="250" viewBox="0 0 720 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M720 300L150 300C67.1573 300 0 232.843 0 150C0 67.1573 67.1573 0 150 0L720 0V300Z" fill="url(#paint0_linear_46_7)"/>
+                        <defs>
+                        <linearGradient id="paint0_linear_46_7" x1="0" y1="150" x2="720" y2="150" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#FE7062"/>
+                        <stop offset="1" stop-color="#5A49A7"/>
+                        </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+            </div>
+
         </div>
-     </section>
+    </section>
+
+    <!-- Image -->
+    <div class="headline">
+        <!-- <h1>Let Us Grow Your Business</h1> -->
+        <img src="images/group-afro-americans-working-together.jpg" alt="">
+        <div class="overlay"></div>
+    </div>
+
+    <!-- Testimonials -->
+    <section id="testimonials">
+        <h1>Testimonials</h1>
+        <div class="card-container">
+
+            <div class="card">
+                <div class="headshot"></div>
+                <div class="card-title">
+                    <h2>Sarah B. <br> Owner of Bloom and Grow</h2>
+                </div>
+                <div class="card-text">
+                    <p>Working with Nexxus Marketing has been an absolute pleasure. Their expertise in digital marketing has transformed our business, leading to a surge in customer engagement and sales. Highly recommend.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="headshot"></div>
+                <div class="card-title">
+                    <h2>Michael T. <br> Marketing Director at GreenField Foods</h2>
+                </div>
+                <div class="card-text">
+                    <p>The team at Nexxus Marketing truly understands the digital landscape. Their tailored approach and constant support have made a huge impact on our brand's growth. They are reliable, creative, and results-driven.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="headshot"></div>
+                <div class="card-title">
+                    <h2>John D. <br> CEO of TechWave</h2>
+                </div>
+                <div class="card-text">
+                    <p>Nexxus Marketing has been a game-changer for our online presence. Their innovative strategies and dedicated team helped us significantly increase our traffic and conversions. We couldn't be happier with the results!</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Text -->
+    <section id="tagline">
+        <div class="tagline-content">
+
+            <div class="left-content">
+                <p>Work with the</p>
+                <h1>Leading digital marketing agency in the Caribbean</h1>
+            </div>
+
+            <div class="right-content">
+                <div class="shape-container">
+                    
+                    <div class="shape-left">
+                        <svg xmlns="http://www.w3.org/2000/svg" id="SvgjsSvg6366" x="0" y="0" version="1.1" viewBox="0 0 499.772 499.772" width="200" height="200" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs"><path d="M492.692 223.646 394.345 52.979a53.123 53.123 0 0 0-46.08-26.667H151.572a53.12 53.12 0 0 0-46.08 26.027L7.145 223.006a53.333 53.333 0 0 0 0 53.333l98.347 170.667a53.332 53.332 0 0 0 46.08 26.453h196.693a53.334 53.334 0 0 0 46.08-25.813l98.347-170.667a53.76 53.76 0 0 0 0-53.333z" fill="url(&quot;#SvgjsLinearGradient6367&quot;)"></path><defs><linearGradient gradientTransform="rotate(90 0.5 0.5)" id="SvgjsLinearGradient6367"><stop stop-opacity=" 1" stop-color="rgba(254, 112, 98)" offset="0"></stop><stop stop-opacity=" 1" stop-color="rgba(242, 85, 104)" offset="0.466015625"></stop><stop stop-opacity=" 1" stop-color="rgba(26, 15, 145)" offset="1"></stop></linearGradient></defs></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" id="SvgjsSvg6366" x="0" y="0" version="1.1" viewBox="0 0 499.772 499.772" width="200" height="200" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs"><path d="M492.692 223.646 394.345 52.979a53.123 53.123 0 0 0-46.08-26.667H151.572a53.12 53.12 0 0 0-46.08 26.027L7.145 223.006a53.333 53.333 0 0 0 0 53.333l98.347 170.667a53.332 53.332 0 0 0 46.08 26.453h196.693a53.334 53.334 0 0 0 46.08-25.813l98.347-170.667a53.76 53.76 0 0 0 0-53.333z" fill="url(&quot;#SvgjsLinearGradient6367&quot;)"></path><defs><linearGradient gradientTransform="rotate(90 0.5 0.5)" id="SvgjsLinearGradient6367"><stop stop-opacity=" 1" stop-color="rgba(254, 112, 98)" offset="0"></stop><stop stop-opacity=" 1" stop-color="rgba(242, 85, 104)" offset="0.466015625"></stop><stop stop-opacity=" 1" stop-color="rgba(26, 15, 145)" offset="1"></stop></linearGradient></defs></svg>
+                    </div>
     
+                    <div class="shape-right">
+                        <svg xmlns="http://www.w3.org/2000/svg" id="SvgjsSvg6366" x="0" y="0" version="1.1" viewBox="0 0 499.772 499.772" width="200" height="200" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs"><path d="M492.692 223.646 394.345 52.979a53.123 53.123 0 0 0-46.08-26.667H151.572a53.12 53.12 0 0 0-46.08 26.027L7.145 223.006a53.333 53.333 0 0 0 0 53.333l98.347 170.667a53.332 53.332 0 0 0 46.08 26.453h196.693a53.334 53.334 0 0 0 46.08-25.813l98.347-170.667a53.76 53.76 0 0 0 0-53.333z" fill="url(&quot;#SvgjsLinearGradient6367&quot;)"></path><defs><linearGradient gradientTransform="rotate(90 0.5 0.5)" id="SvgjsLinearGradient6367"><stop stop-opacity=" 1" stop-color="rgba(254, 112, 98)" offset="0"></stop><stop stop-opacity=" 1" stop-color="rgba(242, 85, 104)" offset="0.466015625"></stop><stop stop-opacity=" 1" stop-color="rgba(26, 15, 145)" offset="1"></stop></linearGradient></defs></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" id="SvgjsSvg6366" x="0" y="0" version="1.1" viewBox="0 0 499.772 499.772" width="200" height="200" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs"><path d="M492.692 223.646 394.345 52.979a53.123 53.123 0 0 0-46.08-26.667H151.572a53.12 53.12 0 0 0-46.08 26.027L7.145 223.006a53.333 53.333 0 0 0 0 53.333l98.347 170.667a53.332 53.332 0 0 0 46.08 26.453h196.693a53.334 53.334 0 0 0 46.08-25.813l98.347-170.667a53.76 53.76 0 0 0 0-53.333z" fill="url(&quot;#SvgjsLinearGradient6367&quot;)"></path><defs><linearGradient gradientTransform="rotate(90 0.5 0.5)" id="SvgjsLinearGradient6367"><stop stop-opacity=" 1" stop-color="rgba(254, 112, 98)" offset="0"></stop><stop stop-opacity=" 1" stop-color="rgba(242, 85, 104)" offset="0.466015625"></stop><stop stop-opacity=" 1" stop-color="rgba(26, 15, 145)" offset="1"></stop></linearGradient></defs></svg> 
+                    </div>  
 
-    <!-- <section id="testimonials">
-        <div class="testimonials-container">
-            <div class="testimonial-card a">
-                <div class="headshot"><img src="images/headshots/woman.jpg" alt=""></div>
-                <h1>Sarah B.</h1>
-                <h2>Owner of Bloom & Grow Floral Design</h2>
-                <p>Working with Nexxus Marketing has been an absolute pleasure. Their expertise in digital marketing has 
-                    transformed our business, leading to a surge in customer engagement and sales. Highly recommend!
-                </p>
+                </div>
             </div>
-            <div class="testimonial-card b">
-                <div class="headshot"><img src="images/headshots/man-1.jpg" alt=""></div>
-                <h1>John D.</h1>
-                <h2>CEO of TechWave Solutions</h2>
-                <p>The team at Nexxus Marketing truly understands the digital landscape. Their tailored approach 
-                   and constant support have made a huge impact on our brand's growth. They are reliable, creative, and results-driven.
-                </p>
+
+        </div>
+    </section>
+
+    <!-- Banner -->
+    <section id="banner">
+
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <div class="contact-content">
+            <div class="contact-left">
+                <img src="images/man-on-laptop.png" alt="">
             </div>
-            <div class="testimonial-card c">
-                <div class="headshot"><img src="images/headshots/man-2.jpg" alt=""></div>
-                <h1>Michael T.</h1>
-                <h2>Marketing Director at GreenField Foods</h2>
-                <p>Nexxus Marketing has been a game-changer for our online presence. Their innovative strategies and
-                     dedicated team helped us significantly increase our traffic and conversions. We couldn't be happier with the results!
-                </p>
+            <div class="contact-right">
+                <div class="contact-form">
+                    <h1>Contact</h1>
+                    <form action="">
+                        <input type="text" name="name" id="name" placeholder="Your Name">
+                        <input type="text" name="email" id="email" placeholder="Email">
+                        <input type="text" name="message" id="message">
+                    </form>
+                </div>
             </div>
         </div>
-    </section> -->
+    </section>
 
-    <!-- <section id="contact">
-        <div class="contact-form">
-            <form>
-                
-                <div class="contact-left">
-                    <h1 class="title">Contact Us</h1>
-                    <h2 class="description">Let us take your business to the Nexx level.
-                          For more information, contact us here.
-                    </h2>
-                    <img src="images\phone-img.png" alt="" class="contact-img">
-                
-                </div>
-
-                <div class="contact-right">
-                    <div class="input-container">
-                        <p class="placeholder">Your Name</p>
-                        <input type="text" name="name" autocomplete="off" class="input-name input">
-                        <svg class="line-svg" width="301" height="3" viewBox="0 0 301 3" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path class="elastic-line" d="M0.975952 1.85319C0.975952 1.85319 89.1399 1.79705 147.5 1.85318C206.62 1.91004 300.976 1.85319 300.976 1.85319" stroke="#E9084C" stroke-width="2"/>
-                        </svg>
-                    </div>
-
-                    <div class="input-container">
-                        <p class="placeholder">Your Email</p>
-                        <input type="text" name="email" autocomplete="off" class="input-email input">
-                        <svg class="line-svg" width="301" height="3" viewBox="0 0 301 3" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path class="elastic-line" d="M0.975952 1.85319C0.975952 1.85319 89.1399 1.79705 147.5 1.85318C206.62 1.91004 300.976 1.85319 300.976 1.85319" stroke="#E9084C" stroke-width="2"/>
-                        </svg>
-                    </div>
-
-                    <div class="input-container">
-                        <p class="placeholder">Your Message</p>
-                        <input type="text" name="name" autocomplete="off" class="input-name input">
-                        <svg class="line-svg" width="301" height="3" viewBox="0 0 301 3" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path class="elastic-line" d="M0.975952 1.85319C0.975952 1.85319 89.1399 1.79705 147.5 1.85318C206.62 1.91004 300.976 1.85319 300.976 1.85319" stroke="#E9084C" stroke-width="2"/>
-                        </svg>
-                    </div>
-                    <button>Submit</button>
-                </div>
-            </form>
+    <!-- Email Sign Up -->
+    <section id="sign-up">
+        <h1>Take your business to the <br> Nexx Level</h1>
+        <p>Sign up for weekly tricks and tips to grow your business</p>
+        <div class="input-container">
+            <input type="email" id="email-sign-up"><button>Sign Up</button>
         </div>
-    </section> -->
+    </section>
 
     <footer>
-        <div class="logo">
-            <a href="index.html">
-                <svg style= "margin-left:30px;"xmlns="http://www.w3.org/2000/svg" id="SvgjsSvg2722" x="0" y="0" version="1.1" viewBox="0 0 512 512" width="200" height="200" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs"><path d="M0 .001h235.016v50.361H0zm0 92.327h235.016v50.36H0zm0 92.328v50.36h235.016v-50.36zM461.638.001h50.361v235.016h-50.361zm-92.328 0h50.36v235.016h-50.36zm-92.327 0v235.015h50.36V.001zm0 461.638h235.016V512H276.983zm0-92.328h235.016v50.36H276.983zm163.673-92.327H276.983v50.36H512v-50.36zM0 276.984h50.361V512H0zm92.328 0h50.36V512h-50.36zm92.327 0v235.015h50.361V276.984z" fill="url(&quot;#SvgjsLinearGradient2723&quot;)"></path><defs><linearGradient gradientTransform="rotate(0 0.5 0.5)" id="SvgjsLinearGradient2723"><stop stop-opacity=" 1" stop-color="rgba(255, 105, 0)" offset="0.131015625"></stop><stop stop-opacity=" 1" stop-color="rgba(221, 112, 240)" offset="0.571015625"></stop><stop stop-opacity=" 1" stop-color="rgba(255, 0, 76)" 
-                    offset="1"></stop></linearGradient></defs>
-                </svg>
-                <h1>Nexxus</h1>
-            </a>
-        </div>
+        <div class="footer-content">
 
-        <div class="nav-links-footer">
-            <ul>
-                <li class="nav-link"><a href="#">HOME</a></li>
-                <li class="nav-link"><a href="#">ABOUT</a></li>
-                <li class="nav-link"><a href="#">TESTIMONIALS</a></li>
-                <li class="nav-link"><a href="#">CONTACT</a></li>
-            </ul>
+            <div class="company-info">
+
+                <div class="logo-footer"><svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <rect width="100" height="100" fill="url(#pattern0_47_20)"/>
+                    <defs>
+                    <pattern id="pattern0_47_20" patternContentUnits="objectBoundingBox" width="1" height="1">
+                    <use xlink:href="#image0_47_20" transform="scale(0.005)"/>
+                    </pattern>
+                    <image id="image0_47_20" width="200" height="200" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADIBAMAAABfdrOtAAAAKlBMVEUAAAD///////////////////////////////////////////////////+Gu8ovAAAADXRSTlMAipilrLKzvcDO3t/vpBKUFAAAAAFiS0dEDfa0YfUAAAD+SURBVHja7dsxagJRFAXQWYSNKxCXkFKwdQPuwNYmlQsQ0iQiaJHSxj2kT6GdIEqyF5u8MYIDvmFQkHPLC/+f8j2G+cVvJofiL5/RHKOZRPMTzaA8VkAgEAgEAvmP9DPp1UTqBQKBQCCQS2STybdFAgKBQCCQBpDXTMZWIggEAoE8EFlnsrJIQCAQCATSALLMZBYXvEQzj6YbzSKadnmsEBERaSLlZHmPZhrNRzSj6qF1U87jdxcXbKPZR/NVPX5vCgQCgUAgz44MU196ayLJQCAQCARyFemk/qmxSEAgEAgE0gDylnpRYiWCQCAQyAORVurtvkUCAoFAIJC7IyeMNQkv4+yVSQAAAABJRU5ErkJggg=="/>
+                    </defs>
+                </svg>
+                </div>
+
+                <div class="company-info-text">
+                    <h1 style="color: white;">Nexxus Marketing</h1>
+                    <p style="color: white;">Bay Street, Kingstown, St.Vincent</p>
+                </div>
+
+            </div>
+
+            <div class="footer-links">
+                <div class="links-1">
+                    <h2>Company</h2>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="links-2">
+                    <h2>Links</h2>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+            </div>
+
         </div>
     </footer>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="script.js"></script>
-
+    
 </body>
 </html>
