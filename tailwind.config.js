@@ -12,6 +12,7 @@ export default {
     colors: {
       'navy': '#060047',
       'white': '#fff',
+      'gray': '#FF5733',
     },
     extend: {},
   },

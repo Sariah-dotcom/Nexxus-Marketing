@@ -6,6 +6,7 @@ import Services from './components/Services'
 import Footer from './components/Footer'
 import Workflow from './components/Workflow'
 import Testimonials from './components/Testimonials'
+import Subscribe from './components/Subscribe'
 
 export default function App() {
   return (
@@ -16,6 +17,7 @@ export default function App() {
       <Services />
       <Workflow />
       <Testimonials />
+      <Subscribe />
       <Footer />
     </div>
   )
