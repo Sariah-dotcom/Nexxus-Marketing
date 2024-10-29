@@ -4,7 +4,7 @@ import TestimonialCard from './TestimonialCard'
 export default function Testimonials() {
   return (
     <section>
-      <h2 className='text-center font-bold text-3xl mb-10'>Testimonials</h2>
+      <h2 className='text-center font-semibold text-3xl mb-10'>Testimonials</h2>
 
       <div className='flex flex-col gap-10'>
         <TestimonialCard 
