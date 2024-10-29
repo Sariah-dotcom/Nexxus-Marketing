@@ -4,8 +4,8 @@ import StepRight from './StepRight'
 
 export default function Workflow() {
   return (
-    <div className='mb-[5rem]' >
-      <h2 className='font-bold text-3xl text-center mb-10'>How we get things done</h2>
+    <div className='mb-[7rem]' >
+      <h2 className='font-bold text-3xl text-center mb-10'>How we get <br /> things done</h2>
       <div className='flex flex-col gap-10'>
         <Step 
             step='1. Consultation'

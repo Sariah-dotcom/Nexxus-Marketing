@@ -8,6 +8,7 @@ export default function Testimonials() {
 
       <div className='flex flex-col gap-10'>
         <TestimonialCard 
+            headshot='/portrait-1.jpg'
             name='Sarah B.'
             business='Owner of Bloom and Grow'
             review='Working with Nexxus Marketing has been an absolute pleasure. 
@@ -16,12 +17,14 @@ export default function Testimonials() {
         />
 
         <TestimonialCard 
+            headshot='/portrait-2.jpg'
             name='Michael T.'
             business='Marketing Director at GreenField Foods'
             review="The team at Nexxus Marketing truly understands the digital landscape. Their tailored approach and constant support have made a huge impact on our brand's growth. They are reliable, creative, and results-driven."
         />
 
         <TestimonialCard 
+            headshot='/portrait-3.jpg'
             name='John D.'
             business='CEO of TechWave'
             review="Nexxus Marketing has been a game-changer for our online presence. Their innovative strategies and dedicated team helped us significantly increase our traffic and conversions. We couldn't be happier with the results!"

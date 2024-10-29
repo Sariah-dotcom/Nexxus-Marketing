@@ -8,7 +8,7 @@ export default function StepRight(props) {
             <p className='text-xs'>{props.stepDescription}</p>
         </div>
         <div className='w-1/2 flex items-center'>
-            <img className='rotate-180' src="/curve.png" alt="" />
+            <img className='rotate-180 pr-1' src="/curve.png" alt="" />
 
         </div>
   </div>
